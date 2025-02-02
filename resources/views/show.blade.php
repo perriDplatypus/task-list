@@ -27,27 +27,28 @@
         @endif
     </p>
 
-    <div>
-        <a href="{{ route('tasks.edit', ['task' => $task->id]) }}" class="btn">
+    <div class="flex gap-2">
+        <a href="{{ route('tasks.edit', ['task' => $task->id]) }}"
+            class="rounded-md px-2 py-1 text-center font-medium text-slate-700 text-white bg-slate-500/80 shadow-m ring-1 ring-slate-700/10 hover:bg-slate-500">
             Edit
         </a>
-    </div>
 
-    <div>
         <form action="{{ route('tasks.toggle-complete', ['task' => $task->id]) }}" method="POST">
             @csrf
             @method('PUT')
-            <button type="submit">
+            <button type="submit"
+                class="rounded-md px-2 py-1 text-center font-medium text-slate-700 text-white bg-blue-500/80 shadow-m ring-1 ring-slate-700/10 hover:bg-blue-500">
                 Mark as {{ $task->completed ? 'not completed' : 'completed' }}
             </button>
         </form>
-    </div>
 
-    <div>
         <form action="{{ route('tasks.destroy', ['task' => $task->id]) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit">Delete</button>
+            <button type="submit"
+                class="rounded-md px-2 py-1 text-center font-medium text-white bg-red-500/80 shadow-m ring-1 ring-slate-700/10 hover:bg-red-500">
+                Delete
+            </button>
         </form>
     </div>
 @endsection

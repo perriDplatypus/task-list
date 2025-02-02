@@ -8,12 +8,12 @@
     </nav>
     <div>
         @forelse ($tasks as $task)
-            <div>
+            <div class="mb-2 text-slate-700">
                 <a href="{{ route('tasks.show', ['task' => $task->id]) }}"
                     @class(['line-through' => $task->completed])>{{ $task->title }}</a>
             </div>
         @empty
-            <div>There are no tasks</div>
+            <div class="mb-2 text-slate-700">There are no tasks</div>
         @endforelse
     </div>
 
