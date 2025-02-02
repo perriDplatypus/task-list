@@ -1,7 +1,6 @@
 <?php
 
 use \App\Models\Task;
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
