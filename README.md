@@ -13,3 +13,12 @@ This is a simple task list app developed in laravel. This was made for learning 
 This is project 1 of 5 in the course.
 
 The GitHub repository and all the code can be found <a href="https://github.com/perriDplatypus/task-list">here</a>.
+
+
+### Screenshots
+
+<div style="text-align:center ,margin:auto">
+    <img src="resources/public/task_list_1.png" style="border:1px solid black">
+    <img src="resources/public/task_list_3.png" style="border:1px solid black">
+    <img src="resources/public/task_list_2.png" style="border:1px solid black">
+</div>

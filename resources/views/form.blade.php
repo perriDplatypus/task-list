@@ -38,7 +38,7 @@
                 class="w-32 rounded-md px-2 py-1 text-center font-medium text-slate-700 text-white bg-slate-500/80 shadow-m ring-1 ring-slate-700/10 hover:bg-slate-500 mt-4">
                 Add Task
             </button>
-            <button href="{{ route('tasks.show', ['task' => $task->id]) }}"
+            <button href="{{ route('tasks.show', ['task' => isset($task) ?? $task->id]) }}"
                 class="w-32 rounded-md px-2 py-1 text-center font-medium text-white bg-red-500/80 shadow-m ring-1 ring-slate-700/10 hover:bg-red-500 mt-4">
                 Cancel
             </button>
